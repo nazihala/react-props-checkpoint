@@ -1,25 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Profile from './profile/Profile.js';
+import HandleClick from './profile/Profile.js';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Profile fullName="Naziha" bio="Je m'appelle Naziha LAHRACH, je suis née le 19 juin 1990
+     à Gabès, je suis passionnée par le développement web." 
+    profession="web developer" src="./photo.jpg" width="250px" alt="iamge" 
+    HandleClick={HandleClick}/>
+
+   
   );
 }
 
